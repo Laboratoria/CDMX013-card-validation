@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Card Validation</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,51 +30,45 @@
 </header>
 
 <body>
-  <div class="container">
+  <div class="contenedor">
+    <h3 id="title">Oferta <br>Travelers All Stars vinil de colección</h3>
+    <img id="love" src="./imagenes/image 23.png" height="250" alt="Travelers All Stars">
+    <audio controls id="sound">
+      <source src="./audio/travelers.mp3" type="audio/mpeg">
+      <style>
+        @keyframes girarb {
+          from {
+            transform: rotate(360deg);
+          }
 
-    <div class="contenedor">
-      <main id="logo">
-        <h3 id="title">Oferta <br>Travelers All Stars vinil de colección</h3>
-        <img id="love" src="./imagenes/image 23.png" height="250" alt="Travelers All Stars">
-        <audio controls id="sound">
-          <source src="./audio/travelers.mp3" type="audio/mpeg">
-        </audio>
-        <p id="price"></p>
-        <section id="info">
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" name="nombre" id="cliente" placeholder="nombre completo">
-          <div>
-            <label for="tipo de tarjeta">tipo de Tarjeta:</label>
-            <input type="text" name="tarjeta" id="tipo" placeholder="Visa o Mastercard">
-          </div>
-          <label for="tarjeta">No. de Tarjeta:</label>
-          <input type="numero" placeholder="Ingresa tu tarjeta" id="tarjeta" size="16" tabindex="16" maxlength="16" />
-          <div id="resultado"></div>
-          <button id="botonValidar">Validar </button>
-          <style>
-            @keyframes girarb {
-              from {
-                transform: rotate(360deg);
-              }
-
-              to {
-                transforme: rotate(0deg);
-              }
-            }
-          </style>
-      </main>
-      </section>
-
+          to {
+            transforme: rotate(0deg);
+          }
+        }
+      </style>
+    </audio>
+    <p id="price"></p>
+    <section id="info">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" name="nombre" id="cliente" placeholder="nombre completo">
+      <label for="tipo de tarjeta">tipo de Tarjeta:</label>
+      <input type="text" name="tarjeta" id="tipo" placeholder="Visa o Mastercard">
+      <label for="tarjeta">No. de Tarjeta:</label>
+      <input type="numero" placeholder="Ingresa tu tarjeta" id="tarjeta" size="16" tabindex="16" maxlength="16" />
+      <button id="botonValidar">Validar </button>
     </div>
+    
     <section id="frase">
       <b id="lema">Dónde entre más viejo, más valioso</b>
-      <img src="./imagenes/vinil.png" id="discos">
+      <img src="./imagenes/vinil.png" id="discos" />
     </section>
-
-  </div>
-  <footer id="final">
-    <p id="final1">©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
-  </footer>
+  
+    <footer id="final">
+      <p id="final1">©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+    
+    
+    
   <script src="index.js" type="module"></script>
 </body>
 
